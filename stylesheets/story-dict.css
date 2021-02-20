@@ -3,7 +3,7 @@ body {
     background-color: #41403F !important;
     background-image: url('../assets/images/library.jpg');
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -20,6 +20,7 @@ li {
 
 .jumbotron {
     max-width: 960px;
+    background-color: var(--light);
 }
 
 /* Style the tab */
@@ -82,16 +83,23 @@ li {
   margin: 0 auto;
 }
 
+.tabcontent .container {
+  padding: -100px;
+}
+
 .tabcontent {
     animation: fadeEffect 750ms; /* Fading effect takes 0.75 seconds */
     max-width: 960px;
-  }
+    padding: 1px !important;
+}
   
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+
 
 .tabcontent h3 {
     width: 50%;
@@ -113,6 +121,10 @@ li {
     text-align: justify;
     margin-bottom: 15px;
     font-family: 'Lora', serif;
+}
+
+.text-container>p {
+  font-size: 0.97em;
 }
 
 .tabcontent h6 {
@@ -165,9 +177,10 @@ table tr td {
     padding: 2rem 2rem 1rem 2rem !important;
 }
 
-#all-container {
+.all-container {
     align-items: center;
     margin: 0 auto;
+    padding: inherit 2%;
 }
 
 .subsection-header {
@@ -176,10 +189,10 @@ table tr td {
 }
 
 .h5-subhead {
-    width: 45%;
-    padding: 4px;
-    color: var(--light);
-    background-image: linear-gradient(to right, #794fac , var(--white));
+  width: 100%;
+  padding: 4px 16px;
+  color: var(--light);
+  background-image: linear-gradient(to right, #794fac , var(--white));
 }
 
 .tool {
@@ -223,4 +236,45 @@ table tr td {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  .example-jumbotron {
+    padding-top: -10px !important;
+  }
+
+  .card-subtitle {
+    background-color: #794FAC91 !important;
+  }
+
+  /* .quote {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    left: 5%;
+    top: 5%;
+    z-index: 3;
+    opacity: 0.4;
+    border: 5px solid red;
+  }
+
+  .flipped-quote {
+    right: 5px;
+    bottom: 5px;
+    transform: rotate(180deg);
+  }
+
+  .blockquote p,
+  .blockquote footer {
+    z-index: 5;
+  } */
+
+  .quote-container {
+    background-image: url('../assets/images/quotationmark.png');
+  }
+
+  .biblio-link a {
+    background-color: var(--info);
+    color: var(--light);
+    min-width: 80px;
+    padding: 2px 10px;
   }
