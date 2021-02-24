@@ -1,0 +1,147 @@
+:root {
+    --accent: #5a1b87;
+}
+
+/* Navbar */
+
+#nav-container {
+    width: 25%;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+}
+
+ul.navbar {
+    list-style-type: none;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+}
+
+li.nav-item {
+    width: 100%;
+    vertical-align: top;
+}
+
+li.nav-item a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li.nav-item.active {
+    background-color: var(--accent);
+    color: white;
+}
+
+li.nav-item.active a {
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--accent);
+    color: white;
+}
+
+#navfooter {
+    background-color: var(--accent);
+}
+
+/* Nameplate styles */
+
+#nameplate {
+    height: 25%;
+    padding: 10px;
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Headers */
+
+.chapter-title {
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+}
+
+/* Everything Else */
+
+#all-container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+body {
+    margin: 0%;
+}
+
+.spoiler-warning {
+    font-style: italic;
+}
+
+.spoiler-warning:before {
+    content: 'Contains spoilers for: ';
+    font-size: 0.95em;
+}
+
+.biblio-link {
+    transition: color 250ms,
+                background-color 250ms;
+    cursor: pointer;
+}
+.biblio-link:hover {
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+/* Copy to clipboard */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Blockquotes */
+
+  .blockquote-footer {
+      text-align: right;
+  }
