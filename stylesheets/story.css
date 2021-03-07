@@ -67,7 +67,7 @@ li a:hover:not(.active) {
 /* Headers */
 
 .section-title {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive !important;
     letter-spacing: 3px;
 }
 
@@ -75,7 +75,7 @@ li a:hover:not(.active) {
     font-size: 2em;
     padding: 10px 10px 10px 20px;
     border-radius: 5px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive !important;
     
 }
 
@@ -160,7 +160,7 @@ p {
 
 .blockquote-text {
     font-size: 1.1em;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', cursive !important;
     color: var(--accent);
 }
 
