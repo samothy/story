@@ -67,39 +67,49 @@ li a:hover:not(.active) {
 /* Headers */
 
 .section-title {
-    font-family: 'Bebas Neue', cursive !important;
-    letter-spacing: 3px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    color: black;
+    text-shadow: 3px 1px #7b2ab6;
+}
+
+.home-title {
+    letter-spacing: 2px;
 }
 
 .chapter-title {
-    font-size: 2em;
+    font-size: 2.8em;
     padding: 10px 10px 10px 20px;
-    border-radius: 5px;
-    font-family: 'Bebas Neue', cursive !important;
+    border-left: 10px solid var(--accent);
+    font-family: 'Bebas Neue', cursive;
     
+}
+
+.h5-subhead {
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* Table of Contents */
 
 #table-of-contents {
-    padding: -5px !important;
+    padding: 10px;
 }
 
 #table-of-contents a {
-    display: block;
-    width: 100%;
-    background-color: #f1f1f1;
-    padding: 4px 8px;
-    border: 1px solid #d8d8d8;
-    border-radius: 3px;
+    padding: 3px 0px 3px 10px;
+    background-color: #ae4ff134;
     text-decoration: none;
     color: black;
-    transition: color 50ms,
-                background-color 50ms;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: color 150ms,
+                background-color 150ms;
 }
 
 #table-of-contents a:hover {
-    color: var(--light);
+    color: white;
     background-color: var(--accent);
 }
 
@@ -142,8 +152,8 @@ body {
 }
 
 p {
-    
     font-size: 1.05em;
+    text-align: justify;
 }
 
 .drop-caps:first-letter {
@@ -154,61 +164,79 @@ p {
     margin-right: 5px;
 }
 
-.blockquote-container {
-    margin: 10px 60px;
+.between-topics {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 10px;
+    margin: 50px 25px;
 }
 
-.blockquote-text {
-    font-size: 1.1em;
-    font-family: 'Permanent Marker', cursive !important;
-    color: var(--accent);
+.between-topics-lite {
+    border: 2px dashed black;
+    margin: 25px 25%;
 }
 
-/* Copy to clipboard */
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
+.between-chapters {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+    font-size: 1.5em;
+    margin: 50px 0px;
+    padding-bottom: 8px;
+    letter-spacing: 15px;
+}
+
+.between-chapters::before {
+    z-index: -1;
+    top: -2px;
+    bottom: -2px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#conventionsChart {
+    border: 2px solid black;
+}
+
 
   /* Blockquotes */
 
-  .blockquote-footer {
-      text-align: right;
-  }
+    .chapter-blockquote>p {
+        font-size: 0.9em;
+    }
+
+    .blockquote-container {
+        margin: 10px 60px;
+    }
+
+    .blockquote-text {
+        font-size: 1em;
+        font-family: 'Permanent Marker', cursive;
+        color: var(--accent);
+    }
+
+    .characters-quote {
+        font-size: 1.1em;
+    }
+
+    .chapter-blockquote-footer {
+        font-size: 0.9em !important;
+    }
+
+    hr.bq { 
+        border-top: 2px solid black !important;
+        border-bottom: 2px solid black;
+        height: 2px !important;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .blockquote-footer {
+        text-align: right;
+        font-size: 1.3em;
+    }
 
   /* Other Projects */
 
