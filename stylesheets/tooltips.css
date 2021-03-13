@@ -1,0 +1,45 @@
+.tooltips {
+    position: relative;
+    display: inline;
+    line-height: 1.2em;
+    border-radius: 2px;
+    transition: color 150ms;
+    border-bottom: 2px solid black;
+}
+
+.tooltips .tooltipstext {
+    opacity: 0;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -200px;
+    font-family: "Arial", sans-serif;
+    padding: 2%;
+    
+    transition: opacity 250ms;
+  }
+  
+  .tooltips .tooltipstext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltips:hover .tooltipstext {
+    opacity: 1;
+  }
+
+  .tooltips:hover {
+      color: var(--accent);
+  }
