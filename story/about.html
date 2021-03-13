@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='../stylesheets/story.css'>
+        <link rel='stylesheet' href='../stylesheets/tooltips.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+      <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+      
+        <title>Characters - The Storyteller's Dictionary</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src='../scripts/navbar.js'></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src='../scripts/story-dict.js'></script>
+      </head>
+<body>
+
+    <div id='nav-container'>
+        <div id='navbar-placeholder'>  
+            <div id='nameplate'>
+                <h1>The Storyteller's Dictionary</h1>
+                <h6 id='subnameplate'>Stories make sense of the world. We make sense of stories.</h6>
+            </div>
+            
+            <ul class="navbar">
+                <li class="nav-item"><a href='../story/home.html'>Home</a></li>
+                <li class="nav-item"><a href='../story/characters.html'>Characters</a></li>
+                <li class="nav-item"><a href='../story/setting-the-stage.html'>Setting the Stage</a></li>
+                <li class="nav-item"><a href='../story/dread-middle.html'>The Dread Middle</a></li>
+                <li class="nav-item"><a href='../story/cadence-methods.html'>Cadence Methods</a></li>
+                <li class="nav-item"><a href='../story/storming-the-castle.html'>Storming the Castle</a></li>
+                <li class="nav-item"><a href='../story/blog.html'>Blog</a></li>
+                <li class="nav-item"><a href='../story/bibliography.html'>Bibliography</a></li>
+                <li class="nav-item active"><a href='../story/about.html'>About/Contact</a></li>
+            </ul>
+        </div>
+        <script src="../scripts/navbar.js"></script>
+    </div>
+
+    <div class="container col-9" id='all-container'>
+
+
+        <div id="About" class="tabcontent">
+            <div class="container p-5">
+                <h1 class=' display-3 section-title'>About</h1>
+
+                <hr class='bq mb-4 mt-4 ml-0'>
+
+                <p>My name is Sam Frost and I'm a self-taught programmer and web designer with a passion for storytelling.</p>
+
+                <p>The market for storytelling resources is saturated, to say the least. <a href='../pages/bibliography.html'>Some of these resources are excellent</a>, but the majority of them don't go far enough in order to teach the craft of storytelling. Those who write about writing often do one or more of the following:</p>
+                
+                <ol>
+                    <li>Focus only on the surface level, discussing the sentence-level use of language. This is important for storytelling, but disregards the inner workings that give the language purpose.</li>
+                    <li>Condemn a certain kind of storytelling based on overly specific criteria -- most often "unrealistic" stories where characters make glaring mistakes.</li>
+                </ol>
+                
+
+                <hr class='between-topics'>
+
+                <h4 class='chapter-title'>Contact</h4>
+
+                <p>Questions? Comments? Concerns? Maybe you found a typo on the site? Please use the following email address:</p> 
+
+                <a href='mailto:contact@sam-frost.com' id='email'>contact@sam-frost.com</a>
+
+                <div class="tooltip">
+                    <button onclick="copyEmail()" onmouseout="outFunc()">
+                      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                      contact@sam-frost.com
+                      </button>
+                    </div>
+
+                <hr class='between-topics'>
+
+                <h4 class='chapter-title'>Other Projects</h4>
+
+                <p>I also make tiny games and web apps that are totally unrelated to storytelling. Here's a list of the ones that you might find interesting or at least amusing.</p>
+
+                <table class="table projects-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Project</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+        
+                        <tr class='project-link' data-href='https://samandtyler.party/pages/irish-poker.html' target='_blank'>
+                            <td>Irish Poker</td>
+                            <td>The classic drinking game that's less game and more drinking.</td>
+                        </tr>
+                        
+                        <tr class='project-link' data-href='https://samandtyler.party/pages/dun-gen.html' target='_blank'>
+                            <td>Dun-Gen</td>
+                            <td>A tiny name generator for fantasy dungeons.</td>
+                        </tr>
+        
+                        <tr class='project-link' data-href='https://samandtyler.party/pages/drunk-index.html' target='_blank'>
+                            <td>Drunk Index Calculator</td>
+                            <td>How much booze are you getting for your buck?</td>
+                        </tr>
+        
+                        <tr class='project-link' data-href='https://samandtyler.party/pages/hits-and-blows.html' target='_blank'>
+                            <td>Hits and Blows</td>
+                            <td>A guessing game that's as challenging aesthetically as it is mentally.<br> <small><small>(You may have to resize your browser window)</small></small></td>
+                        </tr>
+                                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+<script src='../scripts/story-dict.js'></script>
+</body>

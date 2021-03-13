@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='../stylesheets/story.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+
+  <title>The Storyteller's Dictionary</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='../scripts/navbar.js'></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  
+</head>
+<body>
+  <a id='top'></a>
+  <div id='nav-container'>
+    <div id='navbar-placeholder'>  
+        <div id='nameplate'>
+            <h1>The Storyteller's Dictionary</h1>
+            <h6 id='subnameplate'>Myths &mdash; demystified.</h6>
+        </div>
+        
+        <ul class="navbar">
+          <li class="nav-item active"><a href='../story/home.html'>Home</a></li>
+          <li class="nav-item"><a href='../story/characters.html'>Characters</a></li>
+          <li class="nav-item"><a href='../story/setting-the-stage.html'>Setting the Stage</a></li>
+          <li class="nav-item"><a href='../story/dread-middle.html'>The Dread Middle</a></li>
+          <li class="nav-item"><a href='../story/cadence-methods.html'>Cadence Methods</a></li>
+          <li class="nav-item"><a href='../story/storming-the-castle.html'>Storming the Castle</a></li>
+          <li class="nav-item"><a href='../story/blog.html'>Blog</a></li>
+          <li class="nav-item"><a href='../story/bibliography.html'>Bibliography</a></li>
+          <li class="nav-item"><a href='../story/about.html'>About/Contact</a></li>
+        </ul>
+    </div>
+    <script src="../scripts/navbar.js"></script>
+</div>
+
+<div class="container col-9" id='all-container'>
+
+    <div id='Home home' class='tabcontent'>
+        <div class="container p-5">
+            <h1 class='display-3 section-title home-title'>The Storyteller's Dictionary</h1>
+
+            <hr class='bq mb-4 mt-4 ml-0'>
+
+            <div class="blockquote-container">
+              <blockquote class="blockquote">
+                <p class='blockquote-text'>You can't learn how to write novels. You can only learn how to write the novel you're currently writing.</p>
+                <footer class="blockquote-footer">Brandon Sanderson (paraphrased)</footer>
+              </blockquote>
+            </div>
+
+            <hr class='bq mt-4 mb-5 mr-0'>
+
+            <p class='drop-caps'>There's no such thing as a hard-and-fast rule when it comes to creative work, and unfortunately storytelling is no different. The criteria for what is considered a good story will vary based on cultural context all the way down to individual tastes. No unified theory could ever explain what is compelling and emotionally stirring about <em>every</em> story in the world.</p>
+            
+            <p>There are, however, a handful of patterns that stories share&mdash;in the Western world, at least. Writers and academics have a lot of fun bundling these patterns into what I call storytelling methods, some of which you may have been taught in school.</p>
+
+            <p>No method is more "accurate" than another or cuts more deeply into the essence of storytelling. There are stories I love that contradict much of what I've written here, and a hypothetical story that follows all of this advice wouldn't necessarily be good. But one or more of these methods may be <em>useful</em> for the purpose at hand or shed light on a story you're struggling to tell.</p>
+
+            <hr>
+
+            <h4 class="chapter-title">Who is this site for?</h4>
+
+            <br>
+
+            <p class='drop-caps'>The Storyteller's Dictionary is written using language that addresses writers of prose fiction, particularly novelists. This is purely for the sake of consistency and clarity&mdash;you can imagine how tiring it would be to read "novel/screenplay/short story/TV script/etc" several times on every page. You should be able to swap out the appropriate words to whichever medium you choose and the concepts will still apply.</p>
+
+            <hr>
+
+            <h4 class="chapter-title">The Problem with Storytelling Formulas</h4>
+
+            <br>
+
+            <p class='drop-caps'>You may be thinking that this all sounds incredibly restrictive. Adhering to the Three-Act,Five-Act, 40-Scene, 15-Beat, or any kind of structure is going to stifle your creativity and result in a predictable and derivative story.</p>
+
+            <p>First of all, I repeat that there are many stories I love that don't fit cleanly into any of the structures I write about here. It's possible to break every rule and still produce a compelling and emotionally impactful story. However, keep the following things in mind:</p>
+
+              <ol>
+                <li>Your ability to defy conventions is directly correlated to how well you understand those conventions.</li>
+                <li>Following conventions doesn't guarantee a good story, and defying conventions doesn't guarantee a bad story, but there is an observable correlation between stories that adhere to conventions and stories that are "good."</li>
+                <li>What constitutes a "good" story is subjective, so the strength of the correlation in item 2 depends on what criteria you're measuring.</li>
+              </ol>
+
+            <p>All this to say that learning while the ins-and-outs of the craft doesn't <em>guarantee</em> a good story, it does increase the likelihood. If you put "adheres to storytelling conventions" on one axis and "is widely considered to be a good story" on the other, the result will look something like this:</p>
+
+            <div class="graphContainer" class='justify-content-center'>
+              <canvas id='conventionsChart' width='500' height='300'></canvas>
+            </div>
+
+            
+
+        </div>
+    </div>   
+</div>
+<script src='../scripts/story-dict.js'></script>
+   
+</body>
+</html> 
